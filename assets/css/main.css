@@ -1,0 +1,262 @@
+/** {
+    border: 1px solid red;
+    
+}*/
+
+footer {
+    text-align: center;
+    background-color: #228B22;
+    color: whitesmoke;
+    font-size: 11px;
+    border-top: 4px solid #FFFAF0;
+    position: sticky;
+    padding-top: 40px;
+    width: 103%;
+    bottom: 0px;
+    padding-bottom: 20px;
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper {
+    min-height: 100%;
+  
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+
+  .footer,
+.push {
+  height: 50px;
+}
+
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+  body {
+    background-image: url(../images/wov/wov.png);
+    margin: 0;
+    padding: 0;
+  }
+
+ .contact.head {
+    font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+    text-align: center;
+    background-color: #F0FFF0;  
+}
+
+.nav {
+    padding-top: 30px;
+    font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+    text-align: center;
+    background-color: #F0FFF0;
+    border-bottom: 2px solid #556B2F;
+}  
+
+.navbar {
+  font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+  text-align: center;
+  color: #4169E1;
+  border-bottom: 2px solid #556B2F;
+}
+
+.subtitle {
+  font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+  text-align: center;
+  color: #4169E1;
+  background-color: #F0FFF0;
+}
+  
+.col {
+    background-color: #FFFAF0;
+}
+
+ .col-6 {
+     background-color: #FFFAF0;
+ }
+
+  .display-4 {
+     font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+     text-align: center;
+     color: #F0FFF0;
+     font-style: italic;
+     text-shadow: 4px 4px 5px #228B22;
+ }
+
+ .container-form {
+    background-color: #FFFAF0;
+ }
+
+ .container {
+    padding-bottom: 20px;
+ }
+
+ #main-container {
+    padding-top: 30px;
+    min-height: calc(100vh - 70px);
+    width: auto;
+    background-color: #FFFAF0;
+ }
+
+ .form-group {
+   padding: 10px;
+ }
+
+ .contact-page {
+  font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  color: #228B22;
+  padding: 5px 0 0 10px;
+  border-bottom: 4px;
+  border-color: #228B22;
+ }
+
+ .portfolio-page {
+  font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  color: #228B22;
+  padding: 5px 0 0 10px;
+  border-bottom: 4px;
+  border-color: #228B22;
+ }
+ /*// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+@include media-breakpoint-up(xs) { ... }
+@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { ... }
+@include media-breakpoint-up(lg) { ... }
+@include media-breakpoint-up(xl) { ... }
+
+// Example usage:
+@include media-breakpoint-up(sm) {
+  .some-class {
+    display: block;
+  }
+}*/
+
+.row [class*="col-"] { 
+    @extend .mb-4;
+ 
+    &:last-child {
+      @extend .mb-0;
+    }
+ 
+    @extend .mb-md-5;
+ 
+    &:nth-last-of-type(1),
+    &:nth-last-of-type(2),
+    &:nth-last-of-type(3) {
+      @extend .mb-md-0;
+    }
+ }
+
+
+ .navbar-default {
+   background-color: #F0FFF0;
+   color: #228B22;
+   font-family: Garamond, "Times New Roman", "Courier New", Arial, Verdana, Georgia, sans-serif;
+   font-size: 40px;
+   font-weight: 900;
+   text-align: left;
+   padding-left: 5px;
+   width: 
+   /*a:link { color: red; }
+   a​:active { color: red; }
+   a​:visited { color: red; }
+   a​:hover { color: red; }*/
+ }
+
+.logo {
+  align-content: center;
+  margin: 5px;
+}
+
+.contact-page {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #228B22;
+}
+
+.btn-primary {
+  background-color: #228B22;
+  margin: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+/*width: 100%;
+max-width: 960px;
+margin: 0 auto;
+clear: both;*/
+
+.nav-link {
+  border-left: 1px solid #228B22;
+}
+
+.p-3 {
+  border-bottom: 2px solid #556B2F;
+}
+h2 {
+  color: #228B22;
+}
+
+.card-body {
+  background-color: #228B22;
+  color: #F0FFF0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.portfolio-page {
+  border-bottom: 2px solid #556B2F;
+}
+
+.card {
+  float: left;
+  margin: 5px;
+}
+
+.main-port {
+  margin-bottom: 30px;
+}
